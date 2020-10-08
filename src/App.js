@@ -7,13 +7,15 @@ import { responsive } from './functions/responsive';
 import styled from "styled-components";
 import bgTopDesktop from "./images/bg-pattern-top-desktop.svg";
 import bgBottomDesktop from "./images/bg-pattern-bottom-desktop.svg";
+import bgTopMobile from "./images/bg-pattern-top-mobile.svg";
 
 const Content = styled.div`
+  background: url(${bgTopMobile}) no-repeat;
   margin: 0 auto;
 
   @media (min-width: ${responsive.large}) {
     background: url(${bgTopDesktop}) no-repeat;
-    max-width: 1440px; 
+    max-width: 1440px;  
     width: 90%;
   }
 `;

@@ -4,8 +4,6 @@ import OpinionCard from "../OpinionCard";
 import styled from 'styled-components';
 import { responsive } from '../../functions/responsive'
 
-//let firstAdd = 0;
-
 const CardList = styled.div`
     @media (min-width: ${responsive.large}) {
         display: ${props => props.type !== "stars" ? "flex" : "block"};
